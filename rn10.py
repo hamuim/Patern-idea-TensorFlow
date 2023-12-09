@@ -14,14 +14,6 @@ def learner(x, n_blocks):
 
     x = residual_group(x, 64, n_blocks, n=2)
 
-    x = residual_group(x, 64, n_blocks, n=2)
-
-    x = residual_group(x, 64, n_blocks, n=2)
-
-    x = residual_group(x, 128, n_blocks, n=2)
-
-    x = residual_group(x, 128, n_blocks, n=2)
-
     x = residual_group(x, 128, n_blocks, n=2)
     return x
 
