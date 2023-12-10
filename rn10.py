@@ -10,9 +10,7 @@ def stem(inputs):
     return x
     
 def learner(x, n_blocks):
-    x = residual_group(x, 16, n_blocks, strides=(1, 1), n=4)
-
-    x = residual_group(x, 32, n_blocks, n=2)
+    x = residual_group(x, 32, n_blocks, strides=(1, 1), n=4)
 
     x = residual_group(x, 64, n_blocks, n=2)
 
