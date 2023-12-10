@@ -30,7 +30,7 @@ def final_model(inputs):
     return classification_output
 
 
-def get_training_model1():
+def get_training_model_t():
   inputs = tf.keras.layers.Input(shape=(32,32,3))
   
   classification_output = final_model(inputs) 
@@ -38,8 +38,8 @@ def get_training_model1():
 
   return model
 
-def get_training_model2():
-    n = 2
+def get_training_model():
+    n = 3
     depth =  n * 9 + 2
     n_blocks = ((depth - 2) // 9) - 1
 
