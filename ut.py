@@ -39,7 +39,7 @@ def get_training_model_t():
   return model
 
 def get_training_model():
-    n = 4
+    n = 3
     depth =  n * 9 + 2
     n_blocks = ((depth - 2) // 9) - 1
 
