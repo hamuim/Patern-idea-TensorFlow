@@ -5,7 +5,7 @@ import os
 import numpy as np
 
 def get_training_model():
-    n = 3
+    n = 12
     depth =  n * 9 + 2
     n_blocks = ((depth - 2) // 9) - 1
 
